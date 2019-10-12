@@ -1,0 +1,134 @@
+1. You're re-designing a blog and the blog's posts have the following format for showing the date and time a post was made:
+
+Weekday Month Day, time e.g., Friday May 2, 7pm
+
+You're running out of screen real estate, and on some pages you want to display a shorter format, Weekday Month Day that omits the time.
+
+Write a function, shortenToDate, that takes the Website date/time in its original string format, and returns the shortened format.
+
+Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". Assume shortenToDate's output will be the shortened string, e.g., "Friday May 2".
+
+<!-- Solution: -->
+function shortenToDate(longDate) {
+ return(longDate.substring(0,longDate.indexOf(',')));
+
+}
+shortenToDate("Friday May 2, 7pm");
+
+====================================================
+<!-- Problem 2 -->
+2. Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot seperating them.
+
+It should look like this:
+
+Sam Harris => S.H
+
+Patrick Feeney => P.F
+
+
+<!-- Solution -->
+function abbrevName(name){
+  var nam = name.split(' ');
+ return((nam[0][0].toUpperCase()+'.'+ nam[1][0].toUpperCase()));
+}
+abbrevName("Sam Harris");
+==============================================================
+<!-- Problem 3 -->
+3.Switch/Case - Bug Fixing #6
+
+Oh no! Timmy's evalObject function doesn't work. He uses Switch/Cases to evaluate the given properties of an object, can you fix timmy's function?
+function evalObject(value){
+  var result = 0;
+  switch(value.operation){
+    case'+': result = value.a + value.b
+    case'-': result = value.a - value.b
+    case'/': result = value.a / value.b
+    case'*': result = value.a * value.b
+    case'%': result = value.a % value.b
+    case'^': result = Math.pow(value.a, value.b)
+  }
+}
+
+<!-- Solution -->
+function evalObject(value){
+  var result = 0;
+  switch(value.operation){
+    case'+': return value.a + value.b;
+    case'-': return value.a - value.b;
+    case'/': return  value.a / value.b;
+    case'*': return value.a * value.b;
+    case'%': return  value.a % value.b;
+    case'^': return Math.pow(value.a, value.b);
+    break;
+  }
+  return result;
+}
+
+=======================================================================
+<!-- Problem 4 -->
+Create a function (or write a script in Shell) that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+
+<!-- Solution -->
+function even_or_odd(number) {
+  if (number % 2 ===0){
+  return("Even");
+  } else{
+  return("Odd");
+  }
+
+}
+even_or_odd(2);
+
+=======================================================================
+<!-- Problem 5 -->
+Convert a String to a Number!
+
+Note: This kata is inspired by Convert a Number to a String!. Try that one too.
+
+Description
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+stringToNumber("1234") == 1234
+stringToNumber("605" ) == 605
+stringToNumber("1405") == 1405
+stringToNumber("-7"  ) == -7
+
+
+
+<!-- Solution -->
+var stringToNumber = function(str){
+ return (parseInt(str));
+
+}
+stringToNumber("56")
+
+=====================================================================
+<!-- Problem 6 -->
+Convert a Number to a String!
+
+We need a function that can transform a number into a string.
+
+What ways of achieving this do you know?
+
+Examples:
+numberToString(123); // returns '123';`
+numberToString(999); // returns '999';`
+
+
+
+
+
+
+<!-- Solution -->
+function numberToString(num) {
+  var knew = num.toString();
+  return(knew);
+}
+numberToString(6);
+======================================================================
