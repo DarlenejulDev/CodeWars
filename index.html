@@ -159,3 +159,18 @@ function removeChar(str){
    return str.substring(1).slice(0,-1);
 };
 removeChar('eloquent');
+=======================================================
+<!-- Problem 9 -->
+Remove String Spaces
+Simple, remove the spaces from the string, then return the resultant string.
+
+
+<!-- Solution -->
+function removeSpace(str){
+  return str.split(" ");
+}
+console.log(removeSpace("hello world"));
+Real->
+function splitSentence(s) {
+  return s.split(' ');
+}
