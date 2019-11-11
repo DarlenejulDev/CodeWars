@@ -518,3 +518,22 @@ Other:
 function capitalizeWord(word) {
   return word[0].toUpperCase() + word.slice(1);
 }
+
+============================================================================
+<!-- Problem 27 -->
+;
+function swapValues() {
+    var args = arr.prototype.slice.call(arguments);
+    var temp = args[0];
+    args[0] = args[1];
+    args[1] = temp;
+}
+
+<!-- Solution -->
+;
+function swapValues(args) {
+    var temp = args[0];
+    args[0] = args[1];
+    args[1] = temp;
+}
+=============================================================================
