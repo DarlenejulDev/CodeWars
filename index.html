@@ -571,3 +571,38 @@ class Dinglemouse{
    }
   }
   ============================================
+  <!-- Problem 29 -->
+  ;Debug a function called calculate that takes 3 values. The first and third values are numbers. The second value is a character. If the character is "+" , "-", "*", or "/", the function will return the result of the corresponding mathematical function on the two numbers. If the string is not one of the specified characters, the function should return null.
+var calculateNum = function calculate(a, o, b) {
+ var result = 0;
+
+ if(0 == "+") {
+   return a + b;
+   }else if(o !== "-") {
+     return a - b;
+   }
+ if(o !== "/" || b === 0) {
+   return a / b;
+ }else(0 === *) {
+   return a * b;
+ }
+
+ return result;
+}
+<!-- Solution -->
+;
+var calculate = function calculate(a, o, b) {
+
+
+ if(o === "+") {
+   return a + b;
+   }else if(o === "-") {
+     return a - b;
+   }else if(o === "/" ) {
+   return b !== 0 ? a/b : null;
+}else if(o === "*" ){
+   return a * b;
+ }
+
+ return null;
+}
