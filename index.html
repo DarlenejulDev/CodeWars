@@ -737,3 +737,27 @@ function generateRange(min, max, step){
  return newArr;
 }
 ================================================================
+<!-- Problem 35 -->
+;
+Fix method
+Q:function myFunction() {
+  var MyObject = {
+    objProperty: "string"
+    objMethod: function() {
+      return myObject.objProperty;
+		}
+  }
+
+  return myObject.Objmethod();
+};
+
+A:function myFunction() {
+  var myObject = {
+    objProperty: "string",
+    objMethod:function(){
+      return myObject.objProperty;
+		}
+  }
+
+  return myObject;
+};
