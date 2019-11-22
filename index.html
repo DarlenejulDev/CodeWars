@@ -761,3 +761,11 @@ A:function myFunction() {
 
   return myObject;
 };
+<!-- Problem 36 -->
+;
+Q:Descending Order
+Q:Make a function that can take any non-negative integer as an argument and return it with it's digits in descending order.
+
+A:
+function descendingOrder(n){
+return parseInt(String(n).split('').sort().reverse().join(''))
