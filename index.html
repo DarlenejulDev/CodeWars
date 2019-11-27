@@ -625,33 +625,17 @@ return arr.reverse()
 ================================================
 <!-- Problem 31 -->
 ;
-Deletion in an array
-The deleteValues function takes an array and removes elements that answer true to the pred function.
-For some reason, some of the elements of the array for which the predicate holds are not deleted...
-Can you fix the code?
+5 without numbers !!
 
-function deleteValues(array, pred) {
-  for(var i = 0; i < array.length; i++) {
-    if ( pred(array[i]) ) {
-      array.splice(i, 1);
-    }
-  }
-  return array;
-}
+Write a function that always returns 5
+Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+Good luck :)
+
 
 <!-- Solution -->
 ;
-function deleteValues(array, pred) {
-var x = array.length;
-var d = [];
-
-  for (var i = 0; i < x; i++) {
-    if (pred(array[i])) {
-      array.splice(i, 1);
-      i--;
-    }
-  }
-  return array;
+function unusualFive() {
+return 'print'.length;
 }
 ==================================================
 <!-- Problem  32 -->
@@ -758,6 +742,7 @@ A:function myFunction() {
 
   return myObject;
 };
+===================================================================
 <!-- Problem 36 -->
 ;
 Q:Descending Order
@@ -766,3 +751,6 @@ Q:Make a function that can take any non-negative integer as an argument and retu
 A:
 function descendingOrder(n){
 return parseInt(String(n).split('').sort().reverse().join(''))
+
+=====================================================================
+<!-- Problem 37 -->
