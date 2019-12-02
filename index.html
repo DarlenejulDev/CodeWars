@@ -454,25 +454,25 @@ function myFunction() {
 =========================================================
 <!-- Problem 24 -->
 ;
-The following code is not giving the expected results. Can you figure out what the issue is?
-The following is an example of data that would be passed in to the function.
-var data = [
-  {name: 'Joe', age: 20},
-  {name: 'Bill', age: 30},
-  {name: 'Kate', age: 23}
-]
+Return the closest number multiple of 10
+Given a number return the closest number to it that is divisible by 10.
+Example input:
+22
+25
+37
+Expected output:
+20
+30
+40
 
-getNames(data) // should return ['Joe', 'Bill', 'Kate']
+A:
 
-<!-- Solution -->
-;
-function getNames(data){
-  return data.map(
-  function(item)
-  {
-  return item.name
-  });
-}
+function closestMultiple10(num) {
+ console.log((Math.round(num/10)*10));
+};
+
+closestMultiple10(123);
+
 ======================================================================
 <!-- Problem 25 -->
 ;
